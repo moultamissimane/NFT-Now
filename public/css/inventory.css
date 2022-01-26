@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;600;700;800;900&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+a {
+    text-decoration: none;
+}
+.logo {
+    object-position : 50% 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.left-bar-container{
+    height : 100%;
+    width : 15%;
+    margin : auto;
+    padding-top : 1%;
+    position : fixed;
+    top : 0;
+    left : 0;
+    z-index : 1;
+    overflow : auto; /*important for background color to work*/
+}
+.main-page{
+    background-color: #12173D;
+    padding-top: 2rem;
+    padding-left: 6rem;
+    width: 100%;
+    height: 100%;
+}
+.SEARCH_MOBILE{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-color{
+    background-color: #12173D;
+}
+
+.color {
+    color : #12173D;
+}
+
+.page-switcher{
+    display :inline-block;
+    /* border: 1px solid #292C49; */
+    /* border-color: rgb(255, 255, 255);  */
+    height : 3rem;
+    width : 80%;
+    margin-top : 50%;
+    margin-bottom : 20%;
+}
+#stats-page {
+    /* display :block; */
+    border: 1px solid #ffffff;
+    height : 3rem;
+    width : 100%;
+    background-color : #292C49;
+}
+#border-left {
+    position : absolute;
+    border-left : 5px solid #ff0000;
+}
+
+#invent-page {
+    border: 1px solid #292C49;
+    height : 3rem;
+    width : 70%;
+    float : left;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex{
+    display : flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.space-between{
+    margin: 2 2rem;
+}
+
+.space-between_CRUD{
+    margin : 1rem;
+}
+
+.input-field {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    border : 0;
+}
+.input-icons {
+    width: 100%;
+}
+
+.input-icons i{
+    position: relative;
+    float : right; 
+    cursor: pointer;
+}
+
+.icon {
+    position : relative;
+    top : 1.9rem;
+    z-index : 10;
+    font-size: 1.5rem;
+}
+
+.search-container{
+    width : 40%;
+}
+
+.margin{
+    margin : 0 5rem;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #12173D;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+.dropdown-content a {
+    /* color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    
+.dropdown-content a:hover {
+    color: black;
+    background-color: #f1f1f1;}
+
+.inline-block{
+    /* position: relative; */
+    display :inline-block;
+}
+
+.left {
+    float : left;
+    margin : 1rem;
+}
+.right {
+    float : right;
+}
+#min-price, #max-price {
+    width : 5rem;
+    height: 1.6rem;
+    border-radius: 25px;
+    border : 0;
+}
+
+#start-date, #end-date{
+    width : 10rem;
+    height: 1.6rem;
+    border-radius: 25px;
+    border : 0;
+}
+
+tr:hover {
+    background-color: #12173D;
+}
+table .active {
+    background-color: #12173D;
+}
+td a {
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+td, th {
+    /* padding : 1.5rem; */
+    border-bottom: 1px solid #000;
+    border-color: grey;
+}
+
+table img{
+    width: 30%;
+    height: 30%; 
+    /* object-fit: contain; */
+}
+
+.pagination {
+    display:flex;
+    justify-content: center;
+  }
+  
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+.pagination a.active {
+    background-color: #12173D;
+    /* color: #12173D; */
+    color : white;
+    /* border : 1px solid; */
+    border-color : white;
+}
+.pagination a:hover:not(.active) {
+      background-color: white;
+      color : black;
+}
+/* .display {
+    display: block;
+} */
+.ADD, .UPDATE, .bg-blurr{
+    display : none;
+}
+.ADD, .UPDATE{
+    position: absolute;
+    bottom :2px ;
+    height:  280px;
+    width : 100%;
+    z-index : 900;
+    /* background-color: white; */
+    border-top : 2px solid white;
+    /* border-bottom : 2px solid white; */
+
+}
+.bg-blurr{
+    /* display : block; */
+    z-index : 899;
+    position : fixed;
+    /* height : 100%; */
+    top : 0;
+    height : 100%;
+    width : 100%;
+    /* width : inherit; */
+    background-color: rgba(255, 255, 255, 0.644);
+    filter : blur(6rem)
+}
+.ADD form, .UPDATE form {
+    top : 20%;
+    /* margin-top : 50%; */
+    
+}
+.ADD button, .UPDATE button {
+    width : 10rem;
+    height : 3rem;
+}
+.ADD input, .UPDATE input, select {
+   border-radius: 0.5rem;
+   width : 14rem;
+   height : 2.5rem;
+}
+.DELETE_CONFIRM{
+    display : none;
+    /* border : 2px solid white; */
+    /* border-radius: 1rem; */
+
+}
+.Proceed{
+    /* display : block; */
+    /* border : 2px solid white; */
+    background-color:  #ff4e4e;
+    color : black;
+    width : 40%;
+    height : 4rem;
+    border-radius: 1rem;
+}
+.Cancel{
+    /* display : block; */
+    /* border : 2px solid white; */
+    background-color: rgb(146, 255, 119);
+    color : black;
+    width : 40%;
+    height : 4rem;
+    border-radius: 1rem;
+}
+.CLOSE{
+    cursor: pointer;
+}
+form ul li {
+    list-style: none;
+    
+}
+form {
+    position : relative;
+}
+
+button{
+    border: none;
+    height: 1.6rem;
+    width : 5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.DELETE_BUTTON{
+    width: 100px;
+    height: 100px;
+}
+
+#cat_add option{
+    color : black;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 1000px){
+    body{
+        flex-direction : column;
+    }
+
+    .left-bar-container{
+        flex-direction: row;
+        width : 100%;
+        /* position : relative; */
+        height : 100%;
+        /* z-index : -7; */
+    }
+    .logo {
+        float : left;
+        height : 80px;
+        width :80px;
+        margin : 1rem;
+    }
+    .page-switcher{
+        /* position : absolute; */
+        /* right  : 0; */
+        margin : 1rem;
+        margin-top : 2rem;
+        /* float: right; */
+        width : 60%;
+        /* overflow :auto; */
+    }
+    .CRUD {
+        /* display : block; */
+        position : absolute;
+        top : 8rem;
+        flex-direction: row;
+        /* margin-top : 1rem; */
+        margin-left : 1rem;
+        /* font-size: 5rem; */
+        width : 100%;
+        /* bottom : 0; */
+        z-index : 1000;
+    }
+    .CRUD img {
+        width : 4rem;
+        height : 4rem;
+    }
+
+    .main-page{
+        left: 0;
+        width : 100%;
+        top : 25%;
+        z-index : 999;
+        background-color: #12173D;
+    }
+    .ADD_BUTTON h1, .DELETE_BUTTON h1, .UPDATE_BUTTON h1{
+        display : none;
+    }
+
+    .FILTER {
+        display : block;
+        /* display: none; */
+        flex-direction: column;
+        position : absolute;
+        top : 20%;
+        height : 30%;
+        width : 100%;
+        background-color: rgba(131, 131, 131, 0.767);
+    }
+    .FILTER input, .FILTER button{
+        height : 100%;
+    }
+    .SEARCH_MOBILE, .search-container{
+        margin : 0;
+    }
+    .SEARCH_MOBILE input, .search-container input{
+      background-color: #292C49;
+    }
+}
