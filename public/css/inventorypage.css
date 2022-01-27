@@ -37,15 +37,12 @@ body{
     margin-top:2rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .right-side{
         display: flex;
     }
     .cards-wrapper{
         max-width: 44%;
-    }
-    .sidebar{
-        display: block;
     }
 }
 
@@ -53,8 +50,8 @@ body{
     .dashboard-wrapper{
         display: block;
         padding-left: 0rem;
-        width: 98%;
-        margin-left: 1rem;
+        width: 80%;
+        margin-left: 120px;
     }
     .left-side{
         width: 100% !important;
@@ -69,6 +66,8 @@ body{
     .cards-wrapper{
         height: fit-content;
         max-width: 49%;
+    }
+    .cards-wrapper{
         display: block;
     }
     .img{
@@ -98,28 +97,4 @@ body{
     .pie{
         height: 45% !important;
     }
-    .sidebar{
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-   body{
-       margin-left: 6rem; 
-       margin-right: 2rem;
-   } 
-   .sidebar{
-    display: block;
-}
-}
-
-@media only screen and (max-width: 1025px) {
-    .pie{
-        width: 500px!important;
-
-    }
-    .sidebar{
-        display: block;
-    }
-
 }

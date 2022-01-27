@@ -8,14 +8,13 @@
     overflow: hidden; 
     position:fixed; 
     left: 0;
-    width: 6.5%;
-    /* width: calc(16vw - 180px); */
+    width: 110px;
     height:100%;
     background-color: #1F2344;
 }
 
- @media only screen and (max-width: 1200px) {
+ @media  screen and (max-width: 425px) {
     .sidebar{
-        display: none;
+        width: 0px;
     }
  }

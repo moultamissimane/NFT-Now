@@ -2,7 +2,7 @@
 
 session_start();
 if (!isset($_SESSION['user'])) {
-    header("location: /ShopNow/login.php");
+    header("location: /ShopNow2/login.php");
 }
 
 //connect to the db
@@ -36,16 +36,6 @@ $res = mysqli_query($conn, $sql_query);
 
 $cats =  mysqli_fetch_all($res, MYSQLI_ASSOC);
 
-
-
-
-
-
-
-
-$BAYC = 'BAYC';
-$Dod = 'Doodle';
-$WOW = 'World Of Women';
 ?>
 
 <html lang="en">
@@ -67,7 +57,7 @@ $WOW = 'World Of Women';
 
 <body class="flex">
     <!-- side bar -->
-    <div style="overflow: hidden; position:fixed; left:0; right:0; width: 6.5%; height:100%; background-color: #1F2344; " class="sidebar">
+    <div class="sidebar">
     </div>
     <!-- end side bar -->
     <!-- body content -->
@@ -120,10 +110,10 @@ $WOW = 'World Of Women';
                 </div>
             </div>
             <!-- end left side of body content -->
-            <div class="right-side">
+            <div style="flex-wrap:wrap;" class="right-side">
                 <?php foreach ($rows as $r) { ?>
                     <!-- card 1 wrapper -->
-                    <div style="width:100%; margin-bottom: 30px ; border-radius: 15px; background-color:#12173D; " class="cards-wrapper flex">
+                    <div style=" margin-bottom: 30px ; border-radius: 15px; background-color:#12173D; " class="cards-wrapper flex">
                         <div class="img-h3">
                             <div class="h3">
                                 <h3 style="color: #FBBE54; margin-top:1rem; margin-left:1rem; font-family:poppins; font-size: 32px;">TOP SALES</h3>
@@ -177,10 +167,32 @@ $WOW = 'World Of Women';
                                 }
                                 ?>],
                         backgroundColor: [
-                            'violet','blue','purple','grey','yellow','blue','black'
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(64, 240, 131, 0.2)',
+                            'rgba(255, 37, 55, 0.2)',
+                            'rgba(28, 248, 200, 0.2)',
+                            'rgba(53, 31, 252, 0.2)',
+                            'rgba(247, 7, 255, 0.2)',
+                            'rgba(223, 113, 10, 0.2)'
                         ],
                         borderColor: [
-                            'violet','blue','purple','grey','yellow','blue','black'
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)',
+                            'rgba(64, 240, 131, 1)',
+                            'rgba(255, 37, 55, 1)',
+                            'rgba(28, 248, 200, 1)',
+                            'rgba(53, 31, 252, 1)',
+                            'rgba(247, 7, 255, 1)',
+                            'rgba(223, 113, 10, 1)'
                         ],
                         borderWidth: 3
                     }]
