@@ -90,14 +90,11 @@ if (isset($_POST['create'])) {
             background-color: #1F234430;
         }
 
-
-        /* @media screen and (max-width: 1330px) {
+        @media only screen and (max-width: 430px) {
             .dashboard-wrapper {
-                overflow-x: scroll;
-                width: 80%;
-                margin-left: 200px;
+                margin-left: 1rem;
             }
-        } */
+        }
     </style>
 </head>
 
@@ -143,7 +140,7 @@ if (isset($_POST['create'])) {
             </div>
             <h1 class="p-1 text-white flex justify-center items-center ">Edit NFT</h1>
             <label for="name" class="text-white pl-3">NFT Name</label>
-            <input type="text" style="min-width: 320px;display:none;"  id="update-id" name='update-id' class="p-1  rounded-sm form-email outline-none" placeholder="Enter NFT id">
+            <input type="text" style="min-width: 320px;display:none;" id="update-id" name='update-id' class="p-1  rounded-sm form-email outline-none" placeholder="Enter NFT id">
             <input type="text" style="min-width: 320px;" name="productName" id="update-name" class="p-1  rounded-sm form-email outline-none" placeholder="Enter NFT Name" required>
             <label for="src" class="text-white pl-3">NFT image</label>
             <input type="text" style="min-width: 320px;" name="imgSrc" id="update-src" class="p-1  rounded-sm form-email outline-none" placeholder="Enter NFT source URL" required>

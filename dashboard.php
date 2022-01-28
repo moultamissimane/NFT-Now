@@ -98,15 +98,15 @@ $cats =  mysqli_fetch_all($res, MYSQLI_ASSOC);
         <div style="justify-content: flex-end; margin-top:5rem; " class="flex w-full p-3">
             <button onclick="showPopup()" style="background-color: deeppink;" class="p-1 cursor-pointer text-white rounded-sm">Add new NFT</button>
         </div>
-        <div class="dashboard-wrapper rounded-sm w-full flex bg-violet ">
+        <div class="dashboard-wrapper rounded-sm w-full flex bg-violet">
             <!-- left side of body content -->
             <div class="left-side">
                 <div class="flex justify-center">
                     <div style="width: 1025px; height: 323px; border-radius: 15px; background-image: url('./public/assets/images/Etherium.webp'); background-position: center; background-size: cover;" class="">
                     </div>
                 </div>
-                <div style="width:100%; height:75%; background-color:#12173D; margin-top:3rem; " class="rounded">
-                    <canvas id="myChart" class="pie" style="width:20%; height:20%;"></canvas>
+                <div style="width:90%; height:65%; background-color:#12173D; margin-top:3rem; padding-right:7rem; margin-left:2rem;" class="canva-wrapper rounded">
+                    <canvas id="myChart" class="pie" style="width:707px; height:707px;"></canvas>
                 </div>
             </div>
             <!-- end left side of body content -->

@@ -107,7 +107,7 @@ body{
    body{
        margin-left: 6rem; 
        margin-right: 2rem;
-   } 
+    } 
    .sidebar{
     display: block;
 }
@@ -122,4 +122,32 @@ body{
         display: block;
     }
 
+}
+@media only screen and (max-width: 770px) {
+    .pie{
+        height: 80%!important;
+        align-items: center ;
+    }
+    .body{
+        width: 100%;
+        padding-left: 0rem !important;
+    }
+    .canva-wrapper{
+       width: 90%;
+       height:55%;
+       margin-top: 1rem;
+       padding-right: 6rem;
+       margin-left: 1rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .body{
+        width: 100%;
+        padding-left: 0rem !important;
+    }
+    .dashboard-wrapper{
+      width: 100%!important;
+      margin-left: 0rem!important;
+      margin-right: 0rem!important;
+    }
 }
