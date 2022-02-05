@@ -39,7 +39,6 @@ $cats =  mysqli_fetch_all($res, MYSQLI_ASSOC);
 ?>
 
 <html lang="en">
-<a href="/ShopNow2/Dashboard.php"></a>
 
 <head>
     <meta charset="UTF-8">
@@ -102,11 +101,11 @@ $cats =  mysqli_fetch_all($res, MYSQLI_ASSOC);
             <!-- left side of body content -->
             <div class="left-side">
                 <div class="flex justify-center">
-                    <div style="width: 1025px; height: 323px; border-radius: 15px; background-image: url('./public/assets/images/Etherium.webp'); background-position: center; background-size: cover;" class="">
+                    <div style="width: 1025px; height: 323px; border-radius: 15px; background-image: url('./public/assets/images/Etherium.webp'); background-position: center; background-size: cover;" class="eth">
                     </div>
                 </div>
-                <div style="width:90%; height:65%; background-color:#12173D; margin-top:3rem; padding-right:7rem; margin-left:2rem;" class="canva-wrapper rounded">
-                    <canvas id="myChart" class="pie" style="width:707px; height:707px;"></canvas>
+                <div style="width:80%; height:60%; background-color:#12173D; margin-left:4rem;" class="canva-wrapper rounded">
+                    <canvas id="myChart" class="pie"></canvas>
                 </div>
             </div>
             <!-- end left side of body content -->
@@ -211,3 +210,4 @@ $cats =  mysqli_fetch_all($res, MYSQLI_ASSOC);
 </body>
 
 </html>
+

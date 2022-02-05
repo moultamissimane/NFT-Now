@@ -35,17 +35,43 @@ body{
 
 .pie{
     margin-top:2rem;
+    margin-left: 0.8rem;
 }
+
+/* MEDIA */
 
 @media only screen and (max-width: 800px) {
     .right-side{
         display: flex;
+        padding-right: 0.5rem;
+        margin-left: 0.5rem !important;
     }
     .cards-wrapper{
         max-width: 44%;
     }
     .sidebar{
         display: block;
+    }
+}
+@media only screen and (min-width: 2560px) {
+    .left-side{
+        margin-right: 4rem!important;
+    }
+    .right-side{
+        margin-right: 7rem;
+    }
+    .canva-wrapper{
+        width: 70%!important;
+        height: 60%!important;
+        margin-left: 9rem!important;
+    }
+    .pie{
+        padding-top: 5rem;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .canva-wrapper{
+        height: 40%!important;
     }
 }
 
@@ -103,7 +129,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
    body{
        margin-left: 6rem; 
        margin-right: 2rem;
@@ -111,33 +137,42 @@ body{
    .sidebar{
     display: block;
 }
-}
+} */
 
 @media only screen and (max-width: 1025px) {
     .pie{
-        width: 500px!important;
-
+        width: 570px!important;
+        height: 481px !important;
+        padding-top: 2rem;
+        margin-left: 3.5rem;
     }
     .sidebar{
         display: block;
+    }
+    .body{
+        width: 100%;
+        padding-left: 5rem !important;
+        padding-right: 1rem;
+    }
+    .right-side{
+        margin-left: 4rem;
     }
 
 }
 @media only screen and (max-width: 770px) {
     .pie{
-        height: 80%!important;
-        align-items: center ;
+        height: 300px!important;
+        margin-left: 4rem;
+        width: 351px !important;
     }
-    .body{
-        width: 100%;
-        padding-left: 0rem !important;
-    }
+    
     .canva-wrapper{
-       width: 90%;
-       height:55%;
-       margin-top: 1rem;
-       padding-right: 6rem;
-       margin-left: 1rem;
+       margin-top: 0rem;
+       padding-right: 1rem;
+       margin-left: 3.3rem !important;
+    }
+    .sidebar{
+        display: block;
     }
 }
 @media only screen and (max-width: 425px) {
@@ -150,4 +185,18 @@ body{
       margin-left: 0rem!important;
       margin-right: 0rem!important;
     }
+    .left-side{
+        padding-left: 1rem!important;
+    }
+    .right-side{
+        padding-left: 1rem!important;
+    }
+    .pie{
+        display: none;
+    }
+    .canva-wrapper{
+        display: none;
+     }
+
 }
+
